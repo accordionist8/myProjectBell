@@ -26,6 +26,17 @@ public class ArrayTest {
         Assert.assertEquals(2, minPobochnayaDiagonal);
     }
 
+//    Дан кубический массив NxNxN. Найти второе по величине значение элементов диагоналей куба.
+//    В результате вы должны найти ОДНО ЗНАЧЕНИЕ среди всех четырех диагоналей.
+//    Решение необходимо предоставить в виде ОДНОГО метода. Метод возвращает int, принимает - int[][][] arr.
+    @Test
+    public void should_findMinValueCubeDiaganases_valuseOne(){
+        MyArray1 array1 = new MyArray1();
+        int [][][] cube = array1.getCube(5);
+        int result = array1.getMinDiaganalCube(cube);
+    }
+
+
     @Test
     public void should_CheckMernost(){
         MyArray1 array1 = new MyArray1();

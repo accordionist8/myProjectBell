@@ -1,7 +1,10 @@
 package ru.mail.andre1021;
 
+import java.util.Random;
+
 public class MyArray1 {
     protected int [][] array;
+    private int N;
 
     public int[][] getArray() {
         return array;
@@ -32,6 +35,34 @@ public class MyArray1 {
         }
 
         return result;
+    }
+
+    public int[][][] getCube(int N) {
+        this.N = N;
+        int[][][] cube = new int[N][N][N];
+        Random random = new Random();
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                for (int k = 0; k < N; k++) {
+                    cube[i][j][k] = random.nextInt(100) + 1;
+                }
+            }
+        }
+        return cube;
+    }
+
+    public int getMinDiaganalCube(int[][][] cube) {
+        int [] result = new int[N * 3];
+
+
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                for (int k = 0; k < N; k++) {
+                    //cube[i][j][k];
+                }
+            }
+        }
+        return 0;
     }
 }
 
